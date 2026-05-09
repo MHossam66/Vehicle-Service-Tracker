@@ -31,6 +31,11 @@ This project was developed collaboratively using Git and GitHub.
    `python main.py`
 
 # Screenshots
+<img width="737" height="238" alt="4" src="https://github.com/user-attachments/assets/b6e6e2c2-c4ad-4e8f-9ad3-eec8391f56d9" />
+<img width="801" height="587" alt="3" src="https://github.com/user-attachments/assets/076337f5-e078-4c37-9bc5-719f533d3fca" />
+<img width="733" height="586" alt="2" src="https://github.com/user-attachments/assets/1f1f6372-9519-4dbf-b861-92d8004f46b2" />
+<img width="460" height="588" alt="1" src="https://github.com/user-attachments/assets/589049a6-8053-4f13-bc87-db111f32990a" />
+
 
 
 # Known Limitations & Future Improvements
