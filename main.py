@@ -50,6 +50,25 @@ def calculate_service():
 # Calculation Button
 calc_button = tk.Button(root, text="Calculate Next Service", command=calculate_service, bg="#4CAF50", fg="white", font=("Arial", 12))
 calc_button.pack(pady=20)
+# --- Mohamed Ehab | 24040406 ---
+# File Handling
+def save_to_file():
+    try:
+        car_name = car_name_entry.get()
+        current_km = mileage_entry.get()
+        last_date = last_service_entry.get()
+        
+        # Open text file and add Data
+        with open("car_data.txt", "a", encoding="utf-8") as file:
+            file.write(f"Car: {car_name} | Mileage: {current_km} km | Last Service: {last_date}\n")
+            
+        messagebox.showinfo("Success", "Data saved successfully to car_data.txt")
+    except Exception as e:
+        messagebox.showerror("Error", f"Could not save data: {e}")
+
+# Save Data Button
+save_button = tk.Button(root, text="Save Data", command=save_to_file, bg="#2196F3", fg="white", font=("Arial", 12))
+save_button.pack(pady=10)
 
 # Start the GUI event loop
 root.mainloop()
