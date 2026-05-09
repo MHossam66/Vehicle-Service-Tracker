@@ -32,5 +32,24 @@ tk.Label(frame_inputs, text="Last Service Date (YYYY-MM-DD):", bg="#f4f4f4").gri
 last_service_entry = tk.Entry(frame_inputs, width=25)
 last_service_entry.grid(row=2, column=1, pady=5, padx=5)
 
+# --- Khaled Mohamed | 24040346 ---
+# Calculations and Logic 
+def calculate_service():
+    try:
+        car_name = car_name_entry.get()
+        current_km = int(mileage_entry.get())
+        
+        # Add 10.000 Km to the current Km
+        next_service_km = current_km + 10000
+        
+        result_message = f"Car: {car_name}\nNext Service at: {next_service_km} km"
+        messagebox.showinfo("Service Due", result_message)
+    except ValueError:
+        messagebox.showerror("Error", "Please enter a valid number for mileage!")
+
+# Calculation Button
+calc_button = tk.Button(root, text="Calculate Next Service", command=calculate_service, bg="#4CAF50", fg="white", font=("Arial", 12))
+calc_button.pack(pady=20)
+
 # Start the GUI event loop
 root.mainloop()
